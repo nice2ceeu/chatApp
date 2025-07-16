@@ -2,16 +2,14 @@ import firebase from "firebase/compat/app";
 import "firebase/compat/firestore";
 import "firebase/compat/auth";
 
-const firebaseConfig = {
-  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
-  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
-  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
-  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
-  appId: import.meta.env.VITE_FIREBASE_APP_ID,
-};
-
-firebase.initializeApp(firebaseConfig);
+firebase.initializeApp({
+  apiKey: "AIzaSyAbKKdt1ZUc2bIqsdJ1o93AT7lqVlHDD6Y",
+  authDomain: "bago-700ae.firebaseapp.com",
+  projectId: "bago-700ae",
+  storageBucket: "bago-700ae.appspot.com",
+  messagingSenderId: "858703746233",
+  appId: "1:858703746233:web:1b9284fd43f9793ea5f768",
+});
 
 export const auth = firebase.auth();
 export const firestore = firebase.firestore();
